@@ -1,5 +1,5 @@
-import { isNumber } from './utils/number.js';
+import {validateNumber} from './validators/number.js';
 
 export default {
-  isNumber
+	validateNumber,
 }
