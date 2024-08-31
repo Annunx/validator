@@ -1,0 +1,20 @@
+{
+  "name": "@annunx/validators",
+  "version": "2.0.0",
+  "description": "根据一定的规则对数据数据进行校验",
+  "type": "module",
+  "main": "./bundle.cjs",
+  "exports": {
+    "import": "./bundle.mjs",
+    "require": "./bundle.cjs"
+  },
+  "keywords": [
+    "数字",
+    "邮箱",
+    "中国身份证号码",
+    "中国运营商电话号码",
+    "组织机构代码"
+  ],
+  "author": "Annunx",
+  "license": "MIT"
+}
