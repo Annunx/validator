@@ -2,7 +2,7 @@
 
 ## 简介
 
-针对中国大陆规则的验证方法
+根据一定的规则对数据数据进行校验
 
 ## 安装
 
@@ -13,22 +13,32 @@ npm i @annunx/validator
 ## 使用
 
 ```
-import { isNumber } from '@annunx/validator';
+// es6
+import { validateNumber } from "@annunx/validators";
+validateNumber("123456789")
+validateNumber("123456789", true)
+
+// commonjs
+const V = require('@annunx/validators');
+V.validateNumber('123456789');
+
+const {validateNumber}  = require('@annunx/validators');
+validateNumber('123456789', true);
 ```
 
 
-## 示例
+## 验证结果
 
 - 返回验证状态
 
 ```
-isNumber(123); // true
+validateNumber(123); // true
 ```  
 
 - 返回验证状态和错误信息
 
 ```
-isNumber(123, ture); // {state: true, msg: '验证成功'}
+validateNumber(123, ture); // {state: true, msg: '验证成功'}
 ```  
 
 ## 验证方法
@@ -51,3 +61,7 @@ npm install
 ```
 npm run build
 ```
+
+## 更新日志
+
+请查阅git长裤中CHANGELOG.md文件
