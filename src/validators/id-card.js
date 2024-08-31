@@ -1,4 +1,4 @@
-import {getBirthdayFromIDCard} from "../utils";
+import {getBirthdayFromIDCard} from "../utils/index.js";
 
 export const validateIdCard = (str, flag = false) => {
 	const res = {
