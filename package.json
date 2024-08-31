@@ -1,6 +1,6 @@
 {
   "name": "@annunx/validators",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "验证器",
   "main": "dist/validators.js",
   "scripts": {
